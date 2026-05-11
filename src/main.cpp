@@ -1,18 +1,26 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+int sensorPin = 14;
+int ledPin = 13;
+int buzzerPin = 15;
+int sensor;
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+void setup(){
+  pinMode(buzzerPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);
+  pinMode(sensorPin, INPUT);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
+void loop(){
+  sensor = digitalRead(sensorPin);
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  if (sensor == HIGH){
+    digitalWrite(ledPin, HIGH);
+    digitalWrite(buzzerPin, HIGH);
+  }
+  else{
+    digitalWrite(ledPin, LOW);
+    digitalWrite(buzzerPin, LOW);
+  }
+  delay(1000);
 }
