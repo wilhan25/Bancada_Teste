@@ -1,7 +1,7 @@
 # Sensor simples de movimento
 
 ## Descrição
-A ideia do projeto é desenvolver um sistema de detecção de movimento que ao acionar emite um som e u led acende.
+A ideia do projeto é desenvolver um sistema de detecção de movimento que ao acionar emite um som acende um led.
 O projeto tem o intuito simples de praticar minha documentação de projetos eletrônicos e elaborar uma maneira fácil e otimizada de demonstrar meus projetos aqui no github.
 Testar qual melhor formato e o que faz sentido ou não incluir e como se deve incluir !
 
